@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.navmenu {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navmenu a {
+  color: #414141;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: lowercase;
+  font-weight: 400;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navmenu a:hover {
+  color: #9427fb;
+}
+
+.navmenu .dot {
+  width: 4px;
+  height: 4px;
+  background: #9427fb;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navmenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navmenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navmenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(185px);
+  transform: translateX(185px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navmenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(275px);
+  transform: translateX(275px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#intro {
+  padding-top: 12em;
+  padding-bottom: 10em;
+  text-align: center;
+}
+
+h1 {
+  color: #2d2d2d;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #787777;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+#work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects img {
+  height: 30em;
+  width: 40em;
+  margin: 3em;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 3em;
+}
+
+#logo img {
+  height: 4em;
+  width: auto;
+}
